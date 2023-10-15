@@ -17,9 +17,9 @@ def logout(webdriver):
 
 def get_email_password(webdriver):
     email = webdriver.find_element(By.ID, "LoginForm_email")
-    email.send_keys("saikrishnagorijala@hotmail.com")
+    email.send_keys(Email)
     password = webdriver.find_element(By.ID, "LoginForm_password")
-    password.send_keys("Aryan12@12061996")
+    password.send_keys(Password)
     login = webdriver.find_element(By.ID, "login-btn")
     login.click()
     wait(5)
